@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 /**
- * leetcode problem link -: https://leetcode.com/problems/rotate-array/description/
  * Problem Statement: Given an array of N integers, left rotate the array by one place.
  * Input: N = 5, array[] = {1,2,3,4,5}
  * Output: 2,3,4,5,1
