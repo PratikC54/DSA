@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 
 public class LeftrotateanarraybyKplaces {
-    /*
+
     //TC-: O(nXk)
     static void rotate(int[]arr,int k) {
         for (int i=0;i<k;i++){
@@ -22,29 +22,31 @@ public class LeftrotateanarraybyKplaces {
         System.out.println(Arrays.toString(arr));
     }
 
-     */
+
 
     //Optimal solution
     //TC-: O(n)
-    static void rotate(int[]arr,int k) {
-        reverse(arr,0, arr.length-1);
-        reverse(arr,0, k-1);
-        reverse(arr, k, arr.length-1);
-    }
-
-    static void reverse(int[] arr,int start,int end) {
-        while(start<end){
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
-        }
-    }
+//    static void rotate(int[]arr,int k) {
+//        reverse(arr,0, arr.length-1);
+//        reverse(arr,0, k-1);
+//        reverse(arr, k, arr.length-1);
+//    }
+//
+//    static void reverse(int[] arr,int start,int end) {
+//        while(start<end){
+//            int temp = arr[start];
+//            arr[start] = arr[end];
+//            arr[end] = temp;
+//            start++;
+//            end--;
+//        }
+//    }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-        rotate(arr,7);
+//        int[] arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+        int[] arr = {-1,-100,3,99};
+        rotate(arr,2);
+
         System.out.println(Arrays.toString(arr));
     }
 }
